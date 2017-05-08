@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-final class AnyController: Controller {
+public final class AnyController: Controller {
     
-    var root: AnyCanvas!
+    public var root: AnyCanvas!
     
-    var views: [String : UIView]
+    public var views: [String : UIView]
     
     private let _didRenderFunc: () -> ()
     
-    func didRender() {
+    public func didRender() {
         _didRenderFunc()
     }
     

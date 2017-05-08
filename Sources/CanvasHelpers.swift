@@ -11,31 +11,31 @@ import SnapKit
 
 extension Canvas {
     
-    func alignParentTop(offset: Int = 0) {
+    public func alignParentTop(offset: Int = 0) {
         deferToAfterRender.append { _ in
             self.view.snp.makeConstraints { $0.top.equalToSuperview().offset(offset) }
         }
     }
     
-    func alignParentTrailing() {
+    public func alignParentTrailing() {
         deferToAfterRender.append {  _ in
             self.view.snp.makeConstraints { $0.trailing.equalToSuperview() }
         }
     }
     
-    func alignParentLeading() {
+    public func alignParentLeading() {
         deferToAfterRender.append {  _ in
             self.view.snp.makeConstraints { $0.leading.equalToSuperview() }
         }
     }
     
-    func alignParentBottom() {
+    public func alignParentBottom() {
         deferToAfterRender.append {  _ in
             self.view.snp.makeConstraints { $0.bottom.equalToSuperview() }
         }
     }
     
-    func offset(_ top: Int, _ leading: Int, _ bottom: Int, _ trailing: Int) {
+    public func offset(_ top: Int, _ leading: Int, _ bottom: Int, _ trailing: Int) {
         deferToAfterRender.append {  _ in
             self.view.snp.makeConstraints { make in
                 make.topMargin.equalTo(top)
@@ -46,7 +46,7 @@ extension Canvas {
         }
     }
     
-    var height: UInt {
+    public var height: UInt {
         get {
             return self.height
         }
@@ -57,7 +57,7 @@ extension Canvas {
         }
     }
     
-    func toRightOf(_ view: String) {
+    public func toRightOf(_ view: String) {
         deferToAfterRender.append {  controller in
             guard
                 let rightView = controller.views[view]
@@ -71,7 +71,7 @@ extension Canvas {
         }
     }
     
-    func toLeftOf(_ view: String) {
+    public func toLeftOf(_ view: String) {
         deferToAfterRender.append {  controller in
             guard
                 let leftView = controller.views[view]
@@ -85,7 +85,7 @@ extension Canvas {
         }
     }
     
-    func under(_ view: String, offset: Int = 0) {
+    public func under(_ view: String, offset: Int = 0) {
         deferToAfterRender.append {  controller in
             guard
                 let underView = controller.views[view]
@@ -99,7 +99,7 @@ extension Canvas {
         }
     }
     
-    func above(_ view: String, offset: Int = 0) {
+    public func above(_ view: String, offset: Int = 0) {
         deferToAfterRender.append {  controller in
             guard
                 let overView = controller.views[view]
@@ -113,7 +113,7 @@ extension Canvas {
         }
     }
     
-    func centerInParent(xOffset: Int = 0, yOffset: Int = 0) {
+    public func centerInParent(xOffset: Int = 0, yOffset: Int = 0) {
         deferToAfterRender.append {  _ in
             self.view.snp.makeConstraints {
                 $0.centerX.equalToSuperview().offset(xOffset)
@@ -122,13 +122,13 @@ extension Canvas {
         }
     }
     
-    func centerHorizontallyInParent() {
+    public func centerHorizontallyInParent() {
         deferToAfterRender.append { _ in
             self.view.snp.makeConstraints { $0.centerX.equalToSuperview() }
         }
     }
     
-    func matchHeightToParent(dividedBy factor: Int) {
+    public func matchHeightToParent(dividedBy factor: Int) {
         deferToAfterRender.append { _ in
             self.view.snp.makeConstraints { make in
                 make.height.equalToSuperview().dividedBy(factor)

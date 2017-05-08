@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension Canvas where UIKitRepresentation: UILabel {
+public extension Canvas where UIKitRepresentation: UILabel {
     
-    var fontFamily: String {
+    public var fontFamily: String {
         get {
             return view.font.familyName
         }
@@ -21,7 +21,7 @@ extension Canvas where UIKitRepresentation: UILabel {
         }
     }
     
-    var fontSize: CGFloat {
+    public var fontSize: CGFloat {
         get {
             return view.font.pointSize
         }

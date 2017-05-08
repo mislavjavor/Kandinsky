@@ -8,12 +8,6 @@
 
 import Foundation
 
-precedencegroup Slasher {
-    associativity : left
-}
-
-infix operator / : Slasher
-
-func /<T: Canvas, V: Canvas>(left: T, right: inout V) {
+public func /<T: Canvas, V: Canvas>(left: T, right: inout V) {
     left.insert(into: &right)
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A07969EF97A0424EBF9F847 /* Pods_Kandinsky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1492F7B9F0A3517E03B8FAD /* Pods_Kandinsky.framework */; };
 		287D0A6E1C4B73BD004566D6 /* KandinskyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* KandinskyTests.swift */; };
 		28F828811C494B2C00330CF4 /* Kandinsky.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* Kandinsky.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28F828881C494B2C00330CF4 /* Kandinsky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F8287D1C494B2C00330CF4 /* Kandinsky.framework */; };
@@ -34,6 +35,8 @@
 		389C13CE1EC0B2DA00E5C318 /* AnyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C81EC0B2DA00E5C318 /* AnyController.swift */; };
 		389C13D01EC0B2F800E5C318 /* AnyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */; };
 		389C13D11EC0B2F800E5C318 /* AnyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */; };
+		38F9810E1EC0C2C800A33D8D /* CanvasRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9810D1EC0C2C800A33D8D /* CanvasRenderer.swift */; };
+		FFA9DFFAF99866B1CE014DE2 /* Pods_KandinskyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE6241E833C54ECDB2309 /* Pods_KandinskyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,13 @@
 		389C13C71EC0B2DA00E5C318 /* Controller+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Controller+UIViewController.swift"; sourceTree = "<group>"; };
 		389C13C81EC0B2DA00E5C318 /* AnyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyController.swift; sourceTree = "<group>"; };
 		389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCanvas.swift; sourceTree = "<group>"; };
+		38F9810D1EC0C2C800A33D8D /* CanvasRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasRenderer.swift; sourceTree = "<group>"; };
+		4BCAE34902CEB736125E1F54 /* Pods-Kandinsky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kandinsky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kandinsky/Pods-Kandinsky.debug.xcconfig"; sourceTree = "<group>"; };
+		A4E513CC8C680F9168CC5C1C /* Pods-KandinskyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KandinskyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KandinskyTests/Pods-KandinskyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1492F7B9F0A3517E03B8FAD /* Pods_Kandinsky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kandinsky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9A9114AAAE4B2CF1027C3A /* Pods-Kandinsky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kandinsky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kandinsky/Pods-Kandinsky.release.xcconfig"; sourceTree = "<group>"; };
+		EE62901674128EB7EA63FC40 /* Pods-KandinskyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KandinskyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KandinskyTests/Pods-KandinskyTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1EAE6241E833C54ECDB2309 /* Pods_KandinskyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KandinskyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A07969EF97A0424EBF9F847 /* Pods_Kandinsky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F828881C494B2C00330CF4 /* Kandinsky.framework in Frameworks */,
+				FFA9DFFAF99866B1CE014DE2 /* Pods_KandinskyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +106,8 @@
 				28F828971C494B4200330CF4 /* Sources */,
 				28F8288B1C494B2C00330CF4 /* Tests */,
 				28F8287E1C494B2C00330CF4 /* Products */,
+				934E99A6B0BF17773A041423 /* Pods */,
+				88CF9E2B88A43F61B5A74417 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +169,7 @@
 				389C13B31EC0B2BF00E5C318 /* CanvasHelpers.swift */,
 				389C13B41EC0B2BF00E5C318 /* Canvas.swift */,
 				389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */,
+				38F9810D1EC0C2C800A33D8D /* CanvasRenderer.swift */,
 			);
 			name = Canvas;
 			sourceTree = "<group>";
@@ -167,6 +182,26 @@
 				389C13C81EC0B2DA00E5C318 /* AnyController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		88CF9E2B88A43F61B5A74417 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1492F7B9F0A3517E03B8FAD /* Pods_Kandinsky.framework */,
+				F1EAE6241E833C54ECDB2309 /* Pods_KandinskyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		934E99A6B0BF17773A041423 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BCAE34902CEB736125E1F54 /* Pods-Kandinsky.debug.xcconfig */,
+				EC9A9114AAAE4B2CF1027C3A /* Pods-Kandinsky.release.xcconfig */,
+				A4E513CC8C680F9168CC5C1C /* Pods-KandinskyTests.debug.xcconfig */,
+				EE62901674128EB7EA63FC40 /* Pods-KandinskyTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,10 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28F828911C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "Kandinsky" */;
 			buildPhases = (
+				7DA44964245090C47F22C1EB /* [CP] Check Pods Manifest.lock */,
 				28F828781C494B2C00330CF4 /* Sources */,
 				28F828791C494B2C00330CF4 /* Frameworks */,
 				28F8287A1C494B2C00330CF4 /* Headers */,
 				28F8287B1C494B2C00330CF4 /* Resources */,
+				9638599413495975074E958F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28F828941C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "KandinskyTests" */;
 			buildPhases = (
+				36047C83E2CF36FBF98396DA /* [CP] Check Pods Manifest.lock */,
 				28F828831C494B2C00330CF4 /* Sources */,
 				28F828841C494B2C00330CF4 /* Frameworks */,
 				28F828851C494B2C00330CF4 /* Resources */,
+				8A41A6D9DB8E630E262C0E82 /* [CP] Embed Pods Frameworks */,
+				044E4D355E7F95C795F1A25E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +314,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		044E4D355E7F95C795F1A25E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KandinskyTests/Pods-KandinskyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36047C83E2CF36FBF98396DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7DA44964245090C47F22C1EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A41A6D9DB8E630E262C0E82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KandinskyTests/Pods-KandinskyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9638599413495975074E958F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kandinsky/Pods-Kandinsky-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28F828781C494B2C00330CF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +402,7 @@
 				389C13C11EC0B2BF00E5C318 /* Canvas.swift in Sources */,
 				389C13B91EC0B2BF00E5C318 /* SlashOperator.swift in Sources */,
 				389C13C91EC0B2DA00E5C318 /* Controller.swift in Sources */,
+				38F9810E1EC0C2C800A33D8D /* CanvasRenderer.swift in Sources */,
 				389C13CD1EC0B2DA00E5C318 /* AnyController.swift in Sources */,
 				389C13D01EC0B2F800E5C318 /* AnyCanvas.swift in Sources */,
 				389C13B71EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */,
@@ -421,6 +540,7 @@
 		};
 		28F828921C494B2C00330CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BCAE34902CEB736125E1F54 /* Pods-Kandinsky.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
@@ -439,6 +559,7 @@
 		};
 		28F828931C494B2C00330CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC9A9114AAAE4B2CF1027C3A /* Pods-Kandinsky.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
@@ -457,6 +578,7 @@
 		};
 		28F828951C494B2C00330CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4E513CC8C680F9168CC5C1C /* Pods-KandinskyTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -470,6 +592,7 @@
 		};
 		28F828961C494B2C00330CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE62901674128EB7EA63FC40 /* Pods-KandinskyTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;

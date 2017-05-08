@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-typealias ControllerInjectedHandler = (AnyController) -> ()
+public typealias ControllerInjectedHandler = (AnyController) -> ()
 
-protocol Canvas: class {
+public protocol Canvas: class {
     
     var deferToAfterRender: [ControllerInjectedHandler] { get set }
     
@@ -37,27 +37,27 @@ extension Canvas {
         canvas.children.append(AnyCanvas(self))
     }
     
-    typealias Creator = (inout Self) -> Void
+    public typealias Creator = (inout Self) -> Void
     
-    static func make(_ maker: Creator) -> Self {
+    public static func make(_ maker: Creator) -> Self {
         var this = Self()
         maker(&this)
         return this
     }
 
-    typealias Maker = (inout Self) -> Void
-    func add(_ maker: Maker) -> Self {
+    public typealias Maker = (inout Self) -> Void
+    public func add(_ maker: Maker) -> Self {
         var this = self
         maker(&this)
         return this
     }
 }
 
-extension Array where Element: Canvas {
-    typealias Customizer = (inout Element) -> Void
-    mutating func customize(_ customizer: Customizer) {
-        for i in 0..<self.count {
-            customizer(&self[i])
-        }
-    }
-}
+//extension Array where Element: Canvas {
+//    public typealias Customizer = (inout Element) -> Void
+//    public mutating func customize(_ customizer: Customizer) {
+//        for i in 0..<self.count {
+//            customizer(&self[i])
+//        }
+//    }
+//}

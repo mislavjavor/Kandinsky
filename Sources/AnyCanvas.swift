@@ -8,9 +8,9 @@
 
 import Foundation
 
-class AnyCanvas : Canvas {
+public class AnyCanvas : Canvas {
     
-    required init() {
+    required public init() {
         fatalError("Cannot use default instantiation with AnyCanvas. AnyCanvas is a type erasure wrapper")
     }
     
@@ -21,12 +21,12 @@ class AnyCanvas : Canvas {
         self.deferToAfterRender = canvas.deferToAfterRender
     }
     
-    var deferToAfterRender: [ControllerInjectedHandler]
+    public var deferToAfterRender: [ControllerInjectedHandler]
     
-    var children: [AnyCanvas]
+    public var children: [AnyCanvas]
     
-    var view: UIView
+    public var view: UIView
     
-    var id: String?
+    public var id: String?
     
 }

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension Controller where Self: UIViewController {
-    func setContentView<T: Canvas>(with canvas: T) {
+    public func setContentView<T: Canvas>(with canvas: T) {
         
         self.root = canvas.eraseType()
         

@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import UIKit
 
-protocol CanvasRepresentable {
+public protocol CanvasRepresentable {
     
     associatedtype RootCanvasType: Canvas
     

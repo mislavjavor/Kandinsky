@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension Canvas where UIKitRepresentation == UITableView {
+public extension Canvas where UIKitRepresentation == UITableView {
     
-    var delegate: UITableViewDelegate? {
+    public var delegate: UITableViewDelegate? {
         get {
             return view.delegate
         }
@@ -20,7 +20,7 @@ extension Canvas where UIKitRepresentation == UITableView {
         }
     }
     
-    var dataSource: UITableViewDataSource? {
+    public var dataSource: UITableViewDataSource? {
         get {
             return view.dataSource
         }
@@ -29,7 +29,7 @@ extension Canvas where UIKitRepresentation == UITableView {
         }
     }
     
-    func setDelegateAndDataSource<T: UITableViewDelegate & UITableViewDataSource>(_ item: T) {
+    public func setDelegateAndDataSource<T: UITableViewDelegate & UITableViewDataSource>(_ item: T) {
         self.delegate = item
         self.dataSource = item
     }

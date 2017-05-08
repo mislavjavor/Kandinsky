@@ -9,17 +9,17 @@
 import Foundation
 import UIKit
 
-final class k<T: UIView> : Canvas {
+public final class k<T: UIView> : Canvas {
     
-    var deferToAfterRender: [ControllerInjectedHandler]
+    public var deferToAfterRender: [ControllerInjectedHandler]
     
-    var view: T
+    public var view: T
     
-    var children: [AnyCanvas]
+    public var children: [AnyCanvas]
     
-    var id: String?
+    public var id: String?
     
-    init() {
+    public init() {
         deferToAfterRender = []
         view = T()
         children = []

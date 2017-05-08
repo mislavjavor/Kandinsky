@@ -1,6 +1,6 @@
 import UIKit
 
-protocol Controller: class {
+public protocol Controller: class {
     
     var root: AnyCanvas! { get set }
     
@@ -23,8 +23,8 @@ extension Controller {
     }
     
     
-    typealias Customizer<T: UIView> = (inout T) -> Void
-    func q<T: UIView>(_ id: String, as type: T.Type? = nil, handler: @escaping Customizer<T>) {
+    public typealias Customizer<T: UIView> = (inout T) -> Void
+    public func q<T: UIView>(_ id: String, as type: T.Type? = nil, handler: @escaping Customizer<T>) {
         
         
         var results =
@@ -36,7 +36,7 @@ extension Controller {
         }
     }
     
-    func get<T: UIView>(_ id: String, _ type: T.Type) -> [T] {
+    public func get<T: UIView>(_ id: String, _ type: T.Type) -> [T] {
         return r_find(id: id, type: type, in: self.root).map { $0.view as? T}.flatMap { $0 }
     }
     
