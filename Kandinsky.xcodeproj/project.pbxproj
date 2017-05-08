@@ -10,7 +10,30 @@
 		287D0A6E1C4B73BD004566D6 /* KandinskyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* KandinskyTests.swift */; };
 		28F828811C494B2C00330CF4 /* Kandinsky.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* Kandinsky.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28F828881C494B2C00330CF4 /* Kandinsky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F8287D1C494B2C00330CF4 /* Kandinsky.framework */; };
-		28F8289A1C494B4200330CF4 /* iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F828991C494B4200330CF4 /* iOS.swift */; };
+		389C13B51EC0B2BF00E5C318 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AE1EC0B2BF00E5C318 /* K.swift */; };
+		389C13B61EC0B2BF00E5C318 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AE1EC0B2BF00E5C318 /* K.swift */; };
+		389C13B71EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */; };
+		389C13B81EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */; };
+		389C13B91EC0B2BF00E5C318 /* SlashOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B01EC0B2BF00E5C318 /* SlashOperator.swift */; };
+		389C13BA1EC0B2BF00E5C318 /* SlashOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B01EC0B2BF00E5C318 /* SlashOperator.swift */; };
+		389C13BB1EC0B2BF00E5C318 /* Canvas+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B11EC0B2BF00E5C318 /* Canvas+UILabel.swift */; };
+		389C13BC1EC0B2BF00E5C318 /* Canvas+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B11EC0B2BF00E5C318 /* Canvas+UILabel.swift */; };
+		389C13BD1EC0B2BF00E5C318 /* Canvas+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B21EC0B2BF00E5C318 /* Canvas+UITableView.swift */; };
+		389C13BE1EC0B2BF00E5C318 /* Canvas+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B21EC0B2BF00E5C318 /* Canvas+UITableView.swift */; };
+		389C13BF1EC0B2BF00E5C318 /* CanvasHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B31EC0B2BF00E5C318 /* CanvasHelpers.swift */; };
+		389C13C01EC0B2BF00E5C318 /* CanvasHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B31EC0B2BF00E5C318 /* CanvasHelpers.swift */; };
+		389C13C11EC0B2BF00E5C318 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B41EC0B2BF00E5C318 /* Canvas.swift */; };
+		389C13C21EC0B2BF00E5C318 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B41EC0B2BF00E5C318 /* Canvas.swift */; };
+		389C13C41EC0B2D100E5C318 /* Kandinsky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C31EC0B2D100E5C318 /* Kandinsky.swift */; };
+		389C13C51EC0B2D100E5C318 /* Kandinsky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C31EC0B2D100E5C318 /* Kandinsky.swift */; };
+		389C13C91EC0B2DA00E5C318 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C61EC0B2DA00E5C318 /* Controller.swift */; };
+		389C13CA1EC0B2DA00E5C318 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C61EC0B2DA00E5C318 /* Controller.swift */; };
+		389C13CB1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C71EC0B2DA00E5C318 /* Controller+UIViewController.swift */; };
+		389C13CC1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C71EC0B2DA00E5C318 /* Controller+UIViewController.swift */; };
+		389C13CD1EC0B2DA00E5C318 /* AnyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C81EC0B2DA00E5C318 /* AnyController.swift */; };
+		389C13CE1EC0B2DA00E5C318 /* AnyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C81EC0B2DA00E5C318 /* AnyController.swift */; };
+		389C13D01EC0B2F800E5C318 /* AnyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */; };
+		389C13D11EC0B2F800E5C318 /* AnyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +53,19 @@
 		28F828821C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28F828871C494B2C00330CF4 /* KandinskyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KandinskyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F8288E1C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
-		28F828991C494B4200330CF4 /* iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOS.swift; sourceTree = "<group>"; };
 		28F8289B1C494BF100330CF4 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground.playground; path = Example/Playground.playground; sourceTree = "<group>"; };
+		389C13AE1EC0B2BF00E5C318 /* K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasRepresentable.swift; sourceTree = "<group>"; };
+		389C13B01EC0B2BF00E5C318 /* SlashOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlashOperator.swift; sourceTree = "<group>"; };
+		389C13B11EC0B2BF00E5C318 /* Canvas+UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Canvas+UILabel.swift"; sourceTree = "<group>"; };
+		389C13B21EC0B2BF00E5C318 /* Canvas+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Canvas+UITableView.swift"; sourceTree = "<group>"; };
+		389C13B31EC0B2BF00E5C318 /* CanvasHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasHelpers.swift; sourceTree = "<group>"; };
+		389C13B41EC0B2BF00E5C318 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		389C13C31EC0B2D100E5C318 /* Kandinsky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kandinsky.swift; sourceTree = "<group>"; };
+		389C13C61EC0B2DA00E5C318 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		389C13C71EC0B2DA00E5C318 /* Controller+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Controller+UIViewController.swift"; sourceTree = "<group>"; };
+		389C13C81EC0B2DA00E5C318 /* AnyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyController.swift; sourceTree = "<group>"; };
+		389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCanvas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +119,54 @@
 		28F828971C494B4200330CF4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				28F828991C494B4200330CF4 /* iOS.swift */,
+				389C13AA1EC0B29D00E5C318 /* Framework */,
 				28F828801C494B2C00330CF4 /* Kandinsky.h */,
 				28F828821C494B2C00330CF4 /* Info.plist */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		389C13AA1EC0B29D00E5C318 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				389C13AD1EC0B2B100E5C318 /* Controller */,
+				389C13AC1EC0B2AC00E5C318 /* Canvas */,
+				389C13AB1EC0B2A600E5C318 /* Utilities */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		389C13AB1EC0B2A600E5C318 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				389C13C31EC0B2D100E5C318 /* Kandinsky.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		389C13AC1EC0B2AC00E5C318 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				389C13AE1EC0B2BF00E5C318 /* K.swift */,
+				389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */,
+				389C13B01EC0B2BF00E5C318 /* SlashOperator.swift */,
+				389C13B11EC0B2BF00E5C318 /* Canvas+UILabel.swift */,
+				389C13B21EC0B2BF00E5C318 /* Canvas+UITableView.swift */,
+				389C13B31EC0B2BF00E5C318 /* CanvasHelpers.swift */,
+				389C13B41EC0B2BF00E5C318 /* Canvas.swift */,
+				389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */,
+			);
+			name = Canvas;
+			sourceTree = "<group>";
+		};
+		389C13AD1EC0B2B100E5C318 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				389C13C61EC0B2DA00E5C318 /* Controller.swift */,
+				389C13C71EC0B2DA00E5C318 /* Controller+UIViewController.swift */,
+				389C13C81EC0B2DA00E5C318 /* AnyController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +244,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 28F828731C494B2C00330CF4;
 			productRefGroup = 28F8287E1C494B2C00330CF4 /* Products */;
@@ -201,7 +279,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28F8289A1C494B4200330CF4 /* iOS.swift in Sources */,
+				389C13BF1EC0B2BF00E5C318 /* CanvasHelpers.swift in Sources */,
+				389C13BD1EC0B2BF00E5C318 /* Canvas+UITableView.swift in Sources */,
+				389C13C11EC0B2BF00E5C318 /* Canvas.swift in Sources */,
+				389C13B91EC0B2BF00E5C318 /* SlashOperator.swift in Sources */,
+				389C13C91EC0B2DA00E5C318 /* Controller.swift in Sources */,
+				389C13CD1EC0B2DA00E5C318 /* AnyController.swift in Sources */,
+				389C13D01EC0B2F800E5C318 /* AnyCanvas.swift in Sources */,
+				389C13B71EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */,
+				389C13B51EC0B2BF00E5C318 /* K.swift in Sources */,
+				389C13CB1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */,
+				389C13C41EC0B2D100E5C318 /* Kandinsky.swift in Sources */,
+				389C13BB1EC0B2BF00E5C318 /* Canvas+UILabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +298,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389C13C01EC0B2BF00E5C318 /* CanvasHelpers.swift in Sources */,
+				389C13D11EC0B2F800E5C318 /* AnyCanvas.swift in Sources */,
 				287D0A6E1C4B73BD004566D6 /* KandinskyTests.swift in Sources */,
+				389C13BE1EC0B2BF00E5C318 /* Canvas+UITableView.swift in Sources */,
+				389C13C21EC0B2BF00E5C318 /* Canvas.swift in Sources */,
+				389C13BA1EC0B2BF00E5C318 /* SlashOperator.swift in Sources */,
+				389C13CA1EC0B2DA00E5C318 /* Controller.swift in Sources */,
+				389C13CE1EC0B2DA00E5C318 /* AnyController.swift in Sources */,
+				389C13B81EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */,
+				389C13B61EC0B2BF00E5C318 /* K.swift in Sources */,
+				389C13CC1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */,
+				389C13C51EC0B2D100E5C318 /* Kandinsky.swift in Sources */,
+				389C13BC1EC0B2BF00E5C318 /* Canvas+UILabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,20 +9,80 @@
 <a href="https://raw.githubusercontent.com/mislavjavor/Kandinsky/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
 </p>
 
-By [Mislav Javor](http://mislavjavor.com).
+Built by [Mislav Javor](http://mislavjavor.com).
+
+Built with ❤️  &nbsp; at [Ingemark](http://www.ingemark.com) agency, Zagreb
 
 ## Introduction
 
-Kandinsky is a library to .......
+Kandinsky is a Swift powered DSL for writing easy to merge,
+readable and modular layouts. Write your layout in Swift instead of
+storyboards.
 
-<!-- <img src="Example/Kandinsky.gif" width="300"/> -->
 
-## Usage
+## Features example
 
 ```swift
-import Kandinsky
-..
-.
+// Create a root UIView
+k<UIView>().add { r in
+
+    // Create a label in the center of the root UIView
+    k<UILabel>.make {
+        $0.id = "titleLabel"
+        $0.view.text = "Welcome to Kandinsky" // Full UIKit support with the `view`
+        $0.font = .systemFont(ofSize: 30)
+        $0.centerInParent() // Generate in-place constraints
+    }/r
+
+    // Add button under titleLabel
+    k<UIButton>.make {
+        $0.id = "alertButton"
+        $0.view.setTitle("Push me!", for: .normal)
+        $0.under("titleLabel", offset: 30)
+        $0.centerHorizontallyInParent()
+    }/r
+
+    // Declare variables in layout
+    let viewAboveImagesID: String
+
+    // Add views conditionally
+    if hasAdminRights && isDevelopment {
+        k<UIButton>.make {
+            viewAboveImagesID = "loginAsAdminButton"
+            $0.id = viewAboveImagesID
+            $0.view.setTitle("Login as admin", for: .default)
+            $0.under("titleLabel", offset: 30)
+            $0.centerHorizontallyInParent()
+        }/r
+    } else {
+        viewAboveImagesID = "alertButton"
+    }
+
+    k<UIView>.make {
+        $0.id = "imageHolder"
+        $0.alignParentLeadingAndTrailing()
+        $0.under(viewAboveImagesID, offset: 20) // Use variables to affect layout
+        $0.matchHeightToParent(dividedBy: 2)
+        $0.alignParentBottom()}.add { n in
+
+        // Use iteration in layout code
+        images.forEach { image, offset in
+            k<UIImageView>.make {
+                $0.id = "bottomImg\(offset)"
+                $0.view.src = image.srcImage
+                if offset == 0 { // Conditional constraints
+                    $0.alignParentLeading()
+                } else if offset == (images.count - 1) {
+                    $0.alignParentTrailing()
+                } else {
+                    $0.toLeftOfNextSibling()
+                }
+            }
+        }
+
+    }/r
+
+}
 ```
 
 ## Requirements
@@ -42,9 +102,14 @@ If you use **Kandinsky** in your app We would love to hear about it! Drop us a l
 
 ## Examples
 
-Follow these 3 steps to run Example project: Clone Kandinsky repository, open Kandinsky workspace and run the *Example* project.
+Follow these 3 steps to run Example project:
+- Clone Kandinsky repository
+- Open `Kandinsky.xcworkspace`
+- Run the `Example` project
 
-You can also experiment and learn with the *Kandinsky Playground* which is contained in *Kandinsky.workspace*.
+**OR**
+
+- Open the `Example/Playground` and play around with live-preview
 
 ## Installation
 
@@ -72,11 +137,6 @@ github "mislavjavor/Kandinsky" ~> 1.0
 
 * [Mislav Javor](https://github.com/mislavjavor) ([@mislavjavor](https://twitter.com/mislavjavor))
 
-## FAQ
-
-#### How to .....
-
-You can do it by conforming to .....
 
 # Change Log
 
