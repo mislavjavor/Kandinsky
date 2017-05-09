@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public final class k<T: UIView> : Canvas {
+public final class Kandinsky<T: UIView> : Canvas {
     
     public var deferToAfterRender: [ControllerInjectedHandler]
     

@@ -12,7 +12,9 @@ import UIKit
 extension Controller where Self: UIViewController {
     public func setContentView<T: Canvas>(with canvas: T) {
         
-        self.root = canvas.eraseType()
+        var rootCanvas: AnyCanvas = canvas.eraseType()
+        
+        var views = [String: UIView]()
         
         func r_render(canvas: AnyCanvas) -> UIView {
             let selfView = canvas.view
@@ -22,10 +24,10 @@ extension Controller where Self: UIViewController {
             canvas.children.map { r_render(canvas: $0) }.forEach { selfView.addSubview($0) }
             return selfView
         }
-        let renderResult = r_render(canvas: root)
+        let renderResult = r_render(canvas: rootCanvas)
+        executeDefferedAfterRenderActions(canvas: rootCanvas, views: views)
         self.view = renderResult
-        didRender()
-        executeDefferedAfterRenderActions()
+        didRender(views: views, root: rootCanvas)
     }
 }
 

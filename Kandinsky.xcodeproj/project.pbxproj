@@ -11,8 +11,8 @@
 		287D0A6E1C4B73BD004566D6 /* KandinskyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* KandinskyTests.swift */; };
 		28F828811C494B2C00330CF4 /* Kandinsky.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* Kandinsky.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28F828881C494B2C00330CF4 /* Kandinsky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F8287D1C494B2C00330CF4 /* Kandinsky.framework */; };
-		389C13B51EC0B2BF00E5C318 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AE1EC0B2BF00E5C318 /* K.swift */; };
-		389C13B61EC0B2BF00E5C318 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AE1EC0B2BF00E5C318 /* K.swift */; };
+		389C13B51EC0B2BF00E5C318 /* KandinskyOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AE1EC0B2BF00E5C318 /* KandinskyOP.swift */; };
+		389C13B61EC0B2BF00E5C318 /* KandinskyOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AE1EC0B2BF00E5C318 /* KandinskyOP.swift */; };
 		389C13B71EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */; };
 		389C13B81EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */; };
 		389C13B91EC0B2BF00E5C318 /* SlashOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B01EC0B2BF00E5C318 /* SlashOperator.swift */; };
@@ -57,7 +57,7 @@
 		28F828871C494B2C00330CF4 /* KandinskyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KandinskyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F8288E1C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
 		28F8289B1C494BF100330CF4 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground.playground; path = Example/Playground.playground; sourceTree = "<group>"; };
-		389C13AE1EC0B2BF00E5C318 /* K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		389C13AE1EC0B2BF00E5C318 /* KandinskyOP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KandinskyOP.swift; sourceTree = "<group>"; };
 		389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasRepresentable.swift; sourceTree = "<group>"; };
 		389C13B01EC0B2BF00E5C318 /* SlashOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlashOperator.swift; sourceTree = "<group>"; };
 		389C13B11EC0B2BF00E5C318 /* Canvas+UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Canvas+UILabel.swift"; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		389C13AC1EC0B2AC00E5C318 /* Canvas */ = {
 			isa = PBXGroup;
 			children = (
-				389C13AE1EC0B2BF00E5C318 /* K.swift */,
+				389C13AE1EC0B2BF00E5C318 /* KandinskyOP.swift */,
 				389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */,
 				389C13B01EC0B2BF00E5C318 /* SlashOperator.swift */,
 				389C13B11EC0B2BF00E5C318 /* Canvas+UILabel.swift */,
@@ -406,7 +406,7 @@
 				389C13CD1EC0B2DA00E5C318 /* AnyController.swift in Sources */,
 				389C13D01EC0B2F800E5C318 /* AnyCanvas.swift in Sources */,
 				389C13B71EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */,
-				389C13B51EC0B2BF00E5C318 /* K.swift in Sources */,
+				389C13B51EC0B2BF00E5C318 /* KandinskyOP.swift in Sources */,
 				389C13CB1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */,
 				389C13C41EC0B2D100E5C318 /* Kandinsky.swift in Sources */,
 				389C13BB1EC0B2BF00E5C318 /* Canvas+UILabel.swift in Sources */,
@@ -426,7 +426,7 @@
 				389C13CA1EC0B2DA00E5C318 /* Controller.swift in Sources */,
 				389C13CE1EC0B2DA00E5C318 /* AnyController.swift in Sources */,
 				389C13B81EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */,
-				389C13B61EC0B2BF00E5C318 /* K.swift in Sources */,
+				389C13B61EC0B2BF00E5C318 /* KandinskyOP.swift in Sources */,
 				389C13CC1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */,
 				389C13C51EC0B2D100E5C318 /* Kandinsky.swift in Sources */,
 				389C13BC1EC0B2BF00E5C318 /* Canvas+UILabel.swift in Sources */,

@@ -11,22 +11,14 @@ import UIKit
 
 public final class AnyController: Controller {
     
-    public var root: AnyCanvas!
+    private let _didRenderFunc: (ViewHolder, AnyCanvas) -> ()
     
-    public var views: [String : UIView]
-    
-    private let _didRenderFunc: () -> ()
-    
-    public func didRender() {
-        _didRenderFunc()
+    public func didRender(views: ViewHolder, root: AnyCanvas) {
+        _didRenderFunc(views, root)
     }
     
     init<T: Controller>(_ controller: T) {
-        self.root = controller.root
-        self.views = controller.views
-        self._didRenderFunc = {
-            controller.didRender()
-        }
+        self._didRenderFunc = controller.didRender(views:root:)
     }
     
 }

@@ -8,14 +8,3 @@
 
 import Foundation
 import UIKit
-
-
-struct Kandinsky { private init(){}
-    
-//    static func initialize<T>(appDelegate: AppDelegate, with controller: T) where T: UIViewController {
-//        appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
-//        appDelegate.window?.makeKeyAndVisible()
-//        appDelegate.window?.rootViewController = controller
-//    }
-    
-}

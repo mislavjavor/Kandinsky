@@ -1,27 +1,34 @@
 import UIKit
 
+public typealias ViewHolder = [String: UIView]
+
 public protocol Controller: class {
-    
-    var root: AnyCanvas! { get set }
-    
-    var views: [String: UIView] { get set }
+
         
-    func didRender()
+    func didRender(views: ViewHolder, root: AnyCanvas)
     
 }
 
+
 extension Controller {
-    
-    func executeDefferedAfterRenderActions() {
+    func executeDefferedAfterRenderActions<T: Canvas>(canvas: T, views: ViewHolder) {
         
         func r_pass_execute(_ canvas: AnyCanvas) {
-            canvas.deferToAfterRender.forEach { $0(AnyController(self)) }
+            canvas.deferToAfterRender.forEach { $0(views) }
             canvas.children.forEach { r_pass_execute($0) }
         }
-        r_pass_execute(self.root)
+        r_pass_execute(canvas.eraseType())
         
     }
+}
+
+struct Root {
     
+    private let root: AnyCanvas
+    
+    init<T: Canvas>(canvas: T) {
+        self.root = canvas.eraseType()
+    }
     
     public typealias Customizer<T: UIView> = (inout T) -> Void
     public func q<T: UIView>(_ id: String, as type: T.Type? = nil, handler: @escaping Customizer<T>) {
@@ -31,10 +38,13 @@ extension Controller {
             r_find(id: id, type: type, in: root).map { $0.view }
                 .map { $0 as? T }
                 .flatMap { $0 }
+        
         (0..<results.count).forEach { i in
             handler(&results[i])
         }
     }
+    
+    
     
     public func get<T: UIView>(_ id: String, _ type: T.Type) -> [T] {
         return r_find(id: id, type: type, in: self.root).map { $0.view as? T}.flatMap { $0 }
@@ -53,6 +63,10 @@ extension Controller {
     }
 }
 
+
+extension Dictionary where Key == String, Value: UIView {
+    
+}
 
 
 

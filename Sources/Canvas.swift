@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public typealias ControllerInjectedHandler = (AnyController) -> ()
+public typealias ControllerInjectedHandler = (ViewHolder) -> ()
 
 public protocol Canvas: class {
     

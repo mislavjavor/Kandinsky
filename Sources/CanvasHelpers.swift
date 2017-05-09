@@ -60,7 +60,7 @@ extension Canvas {
     public func toRightOf(_ view: String) {
         deferToAfterRender.append {  controller in
             guard
-                let rightView = controller.views[view]
+                let rightView = controller[view]
             else {
                 fatalError("Failed to add view \(self.id ?? "unknown") 'toRightOf' view \(view)")
             }
@@ -74,7 +74,7 @@ extension Canvas {
     public func toLeftOf(_ view: String) {
         deferToAfterRender.append {  controller in
             guard
-                let leftView = controller.views[view]
+                let leftView = controller[view]
             else {
                     fatalError("Failed to add view \(self.id ?? "unknown") 'toLeftOf' view \(view)")
             }
@@ -88,7 +88,7 @@ extension Canvas {
     public func under(_ view: String, offset: Int = 0) {
         deferToAfterRender.append {  controller in
             guard
-                let underView = controller.views[view]
+                let underView = controller[view]
                 else {
                     fatalError("Failed to add view \(self.id ?? "unknown") 'under' view \(view)")
             }
@@ -102,7 +102,7 @@ extension Canvas {
     public func above(_ view: String, offset: Int = 0) {
         deferToAfterRender.append {  controller in
             guard
-                let overView = controller.views[view]
+                let overView = controller[view]
                 else {
                     fatalError("Failed to add view \(self.id ?? "unknown") 'above' view \(view)")
             }
