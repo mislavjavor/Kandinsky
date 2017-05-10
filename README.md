@@ -51,7 +51,7 @@ import Kandinsky
 func makeLayout(buttonTitle: String) -> Kandinsky<UIView> { return
     UIView.set {
         $0.id = "root"
-    $0.view.backgroundColor = .lightGray }.add { r in
+        $0.view.backgroundColor = .lightGray }.add { r in
 
             UIButton.set {
                 $0.id = "myButton"
