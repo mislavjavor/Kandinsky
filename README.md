@@ -83,15 +83,15 @@ We get this:
 
 ![preview](/Assets/preview_base.gif)
 
-### Write your layout in Swift with live preview
+### Easily add new elements to your layout. Use playgrounds for live preview
 
 ![Basic example](/Assets/adding_new_label.gif)
 
-### Develop layouts in an interactive environment
+### Apply behaviour to your layout while you're writing it
 
 ![Interactivity](/Assets/interactivity.gif)
 
-### Quick edit/testing of code
+### Quickly iterate over multiple versions of your layout. Use playground to visualise
 
 ![Quick Edit](/Assets/quick_edit.gif)
 
