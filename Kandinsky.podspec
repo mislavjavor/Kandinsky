@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/mislavjavor'
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
-  s.ios.source_files = 'Kandinsky/Sources/**/*.{swift}'
+  s.ios.source_files = 'Sources/*.{swift}'
   s.ios.frameworks = 'UIKit', 'Foundation'
   s.dependency 'SnapKit', '~> 3.0'
 end
