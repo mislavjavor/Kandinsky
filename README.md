@@ -109,7 +109,7 @@ We get this:
 To install Kandinsky, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Kandinsky', '~> 1.0'
+pod 'Kandinsky', '~> 1.0.1'
 ```
 
 ### Carthage
