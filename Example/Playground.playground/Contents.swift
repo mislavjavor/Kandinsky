@@ -12,67 +12,114 @@ import Kandinsky
 import PlaygroundSupport
 
 
-protocol CanvasExtender {
-    
-}
-
-extension CanvasExtender where Self: UIView {
-    
-    typealias Maker = (inout Kandinsky<Self>) -> Void
-    static func `do`(_ maker: Maker) -> Kandinsky<Self> {
-        let wrapped = Kandinsky<Self>.self
-        return wrapped.make(maker)
-    }
-    
-    static var `do`: Kandinsky<Self> {
-        return Kandinsky<Self>()
-    }
-}
-
-extension UIView: CanvasExtender { }
-
-let myTemplate =
-UIView.do.add { r in
+let demoCanvas =
+UIView.set {
+    $0.view.backgroundColor = .white }.add { r in
         
-        UIButton.do {
-            $0.id = "pushButton"
-            $0.view.setTitle("Hello", for: .normal)
+        UIView.set {
+            $0.id = "topView"
+            $0.view.backgroundColor = .lightGray
+            $0.alignParentTop()
+            $0.alignParentLeading()
+            $0.alignParentTrailing()
+            $0.matchHeightToParent(dividedBy: 2)}.add { n in
+                
+                UILabel.set {
+                    $0.id = "titleLabel"
+                    $0.view.text = "Kandinsky Layout"
+                    $0.fontSize = 35
+                    $0.fontFamily = "AvenirNext-Medium"
+                    $0.view.textColor = .red
+                    $0.centerInParent()
+                }/n
+                
+                UILabel.set {
+                    $0.id = "subtitle"
+                    $0.view.text = "Swift powered layouting engine"
+                    $0.fontSize = 20
+                    $0.view.textColor = .darkGray
+                    $0.centerHorizontallyInParent()
+                    $0.under("titleLabel", offset: 20)
+                }/n
+                
+                UILabel.set {
+                    $0.view.text = "hello world"
+                    $0.centerHorizontallyInParent()
+                    $0.under("subtitle")
+                }/n
+                
+        }/r
+        
+        UIView.set {
+            $0.id = "bottomView"
+            $0.view.backgroundColor = .black
+            $0.under("topView")
+            $0.alignParentLeading()
+            $0.alignParentTrailing()
+            $0.alignParentBottom()}.add { n in
+                
+                UIButton.set {
+                    $0.id = "pressMeButton"
+                    $0.view.setTitle("Press me!", for: .normal)
+                    $0.view.setTitleColor(.white, for: .normal)
+                    $0.centerInParent()
+                }/n
+        }/r
+}
+
+
+
+
+let layout =
+UIView.set {
+    $0.view.backgroundColor = .white }.add { r in
+        
+        UILabel.set {
+            $0.id = "titleLabel"
+            $0.view.text = "Hello world"
+            $0.fontSize = 30 // fontSize is a helper function
             $0.centerInParent()
         }/r
         
-        UILabel.do {
-            $0.id = "titleLabel"
-            $0.view.text = "Kandinsky"
-            $0.fontSize = 30
-            $0.view.textColor = .white
-            $0.under("pushButton", offset: 20)
+        UIButton.set {
+            $0.view.setTitle("Push me!", for: .normal)
+            $0.view.setTitleColor(.blue, for: .normal)
+            $0.under("titleLabel")
             $0.centerHorizontallyInParent()
         }/r
+        
 }
 
-class MyVC: UIViewController, Controller {
+
+
+
+class DemoVC: UIViewController, Controller {
+    
+    var views: ViewHolder = [:]
     
     override func loadView() {
-        setContentView(with: myTemplate)
+        super.loadView()
+        setContentView(with: layout)
     }
     
     func didRender(views: ViewHolder, root: AnyCanvas) {
-        
+        self.views = views
+        let button = views["pressMeButton"] as? UIButton
+        button?.addTarget(self, action: #selector(didTouchButton), for: .touchUpInside)
     }
     
+    func didTouchButton() {
+        let title = views["titleLabel"] as? UILabel
+        title?.text = "Pressed the button"
+        PlaygroundHelper.alert(over: self, message: "Pressed the button")
+    }
 }
 
-let view = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 600))
+let vc = DemoVC()
+let view = PlaygroundHelper.embed(in: vc)
 view.backgroundColor = .white
-let vc = MyVC()
-view.addSubview(vc.view)
-vc.view.snp.makeConstraints { make in
-    make.leading.trailing.top.bottom.equalToSuperview()
-}
-PlaygroundPage.current.needsIndefiniteExecution = true
 PlaygroundPage.current.liveView = view
-
-
+PlaygroundPage.current.needsIndefiniteExecution = true
 
 
 
