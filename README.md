@@ -40,6 +40,49 @@ language.
 - Turing complete (`for` loops, `if` statemets, protocols, interitance etc...)
 layout code
 
+## Eample
+
+If we write this:
+
+```swift
+import UIKit
+import Kandinsky
+
+func makeLayout(buttonTitle: String) -> Kandinsky<UIView> { return
+    UIView.set {
+        $0.id = "root"
+    $0.view.backgroundColor = .lightGray }.add { r in
+
+            UIButton.set {
+                $0.id = "myButton"
+                $0.view.setTitle(buttonTitle, for: .normal)
+                $0.view.setTitleColor(.black, for: .normal)
+                $0.centerInParent()
+            }/r
+    }
+}
+
+class ViewController: UIViewController, Controller {
+
+    let layout = makeLayout(buttonTitle: "Push me!")
+
+    override func loadView() {
+        super.loadView()
+        setContentView(with: layout)
+    }
+
+    func didRender(views: ViewHolder, root: AnyCanvas) {
+        let button = views["myButton"] as? UIButton
+        // handle button is a method which presents an alert
+        button?.addTarget(self, action: #selector(handleButton), for: .touchUpInside)
+    }
+}
+```
+
+We get this:
+
+![preview](/Assets/preview_base.gif)
+
 ### Write your layout in Swift with live preview
 
 ![Basic example](/Assets/adding_new_label.gif)
