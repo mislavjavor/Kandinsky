@@ -40,7 +40,7 @@ language.
 - Turing complete (`for` loops, `if` statemets, protocols, interitance etc...)
 layout code
 
-## Eample
+## Example
 
 If we write this:
 
