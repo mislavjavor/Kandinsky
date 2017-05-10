@@ -5,14 +5,21 @@
 <a href="https://travis-ci.org/mislavjavor/Kandinsky"><img src="https://travis-ci.org/mislavjavor/Kandinsky.svg?branch=master" alt="Build status" /></a>
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
 <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat" alt="Swift 3 compatible" /></a>
-<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
 <a href="https://cocoapods.org/pods/XLActionController"><img src="https://img.shields.io/cocoapods/v/Kandinsky.svg" alt="CocoaPods compatible" /></a>
 <a href="https://raw.githubusercontent.com/mislavjavor/Kandinsky/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
 </p>
 
 Author: [Mislav Javor](http://mislavjavor.com).
 
-Built with ❤️  at [Ingemark](http://www.ingemark.com) agency, Zagreb
+Built at [Ingemark](http://www.ingemark.com) agency, Zagreb
+
+## Looking for contributors
+
+This project is currently a one man operation. I've dedicated a large chuck of
+my free time to this, and would be immensely grateful for any help. </br>
+Thank you for contributing ❤️
+
+## Why Kandinsky
 
 - Storyboards are hard to maintain, obfuscate functionality, hard to reuse
 and almost impossible to merge.</br>
@@ -191,6 +198,14 @@ class DemoVC: UIViewController, Controller {
 Note - `setContentView` only sets the `view` property of the `UIViewController` and
 calls the `didRender` method. You can call it at any time, but it's recommended to
 call it in the `loadView` method
+
+### Getting the view
+
+If you don't want to inherit the `Controller` and just want the view from your
+canvas, you can do it like this:
+```swift
+let view = CanvasRenderer.render(demoLayout)
+```
 
 ## Getting involved
 
