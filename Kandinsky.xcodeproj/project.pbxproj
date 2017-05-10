@@ -8,40 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0A07969EF97A0424EBF9F847 /* Pods_Kandinsky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1492F7B9F0A3517E03B8FAD /* Pods_Kandinsky.framework */; };
-		287D0A6E1C4B73BD004566D6 /* KandinskyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* KandinskyTests.swift */; };
 		28F828811C494B2C00330CF4 /* Kandinsky.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* Kandinsky.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28F828881C494B2C00330CF4 /* Kandinsky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F8287D1C494B2C00330CF4 /* Kandinsky.framework */; };
+		3826E4F71EC36DDD006C7D78 /* KandinskyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* KandinskyTests.swift */; };
 		3897B6CF1EC3088700285126 /* CanvasUIKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3897B6CE1EC3088700285126 /* CanvasUIKitUtility.swift */; };
 		389C13B51EC0B2BF00E5C318 /* KandinskyOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AE1EC0B2BF00E5C318 /* KandinskyOP.swift */; };
-		389C13B61EC0B2BF00E5C318 /* KandinskyOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AE1EC0B2BF00E5C318 /* KandinskyOP.swift */; };
 		389C13B71EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */; };
-		389C13B81EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */; };
 		389C13B91EC0B2BF00E5C318 /* SlashOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B01EC0B2BF00E5C318 /* SlashOperator.swift */; };
-		389C13BA1EC0B2BF00E5C318 /* SlashOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B01EC0B2BF00E5C318 /* SlashOperator.swift */; };
 		389C13BB1EC0B2BF00E5C318 /* Canvas+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B11EC0B2BF00E5C318 /* Canvas+UILabel.swift */; };
-		389C13BC1EC0B2BF00E5C318 /* Canvas+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B11EC0B2BF00E5C318 /* Canvas+UILabel.swift */; };
-		389C13BD1EC0B2BF00E5C318 /* Canvas+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B21EC0B2BF00E5C318 /* Canvas+UITableView.swift */; };
-		389C13BE1EC0B2BF00E5C318 /* Canvas+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B21EC0B2BF00E5C318 /* Canvas+UITableView.swift */; };
 		389C13BF1EC0B2BF00E5C318 /* CanvasHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B31EC0B2BF00E5C318 /* CanvasHelpers.swift */; };
-		389C13C01EC0B2BF00E5C318 /* CanvasHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B31EC0B2BF00E5C318 /* CanvasHelpers.swift */; };
 		389C13C11EC0B2BF00E5C318 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B41EC0B2BF00E5C318 /* Canvas.swift */; };
-		389C13C21EC0B2BF00E5C318 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13B41EC0B2BF00E5C318 /* Canvas.swift */; };
-		389C13C41EC0B2D100E5C318 /* Kandinsky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C31EC0B2D100E5C318 /* Kandinsky.swift */; };
-		389C13C51EC0B2D100E5C318 /* Kandinsky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C31EC0B2D100E5C318 /* Kandinsky.swift */; };
 		389C13C91EC0B2DA00E5C318 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C61EC0B2DA00E5C318 /* Controller.swift */; };
-		389C13CA1EC0B2DA00E5C318 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C61EC0B2DA00E5C318 /* Controller.swift */; };
 		389C13CB1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C71EC0B2DA00E5C318 /* Controller+UIViewController.swift */; };
-		389C13CC1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C71EC0B2DA00E5C318 /* Controller+UIViewController.swift */; };
-		389C13CD1EC0B2DA00E5C318 /* AnyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C81EC0B2DA00E5C318 /* AnyController.swift */; };
-		389C13CE1EC0B2DA00E5C318 /* AnyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C81EC0B2DA00E5C318 /* AnyController.swift */; };
 		389C13D01EC0B2F800E5C318 /* AnyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */; };
-		389C13D11EC0B2F800E5C318 /* AnyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */; };
 		38F9810E1EC0C2C800A33D8D /* CanvasRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9810D1EC0C2C800A33D8D /* CanvasRenderer.swift */; };
-		FFA9DFFAF99866B1CE014DE2 /* Pods_KandinskyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE6241E833C54ECDB2309 /* Pods_KandinskyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		28F828891C494B2C00330CF4 /* PBXContainerItemProxy */ = {
+		3826E4F51EC36D6B006C7D78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 28F828741C494B2C00330CF4 /* Project object */;
 			proxyType = 1;
@@ -63,13 +47,10 @@
 		389C13AF1EC0B2BF00E5C318 /* CanvasRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasRepresentable.swift; sourceTree = "<group>"; };
 		389C13B01EC0B2BF00E5C318 /* SlashOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlashOperator.swift; sourceTree = "<group>"; };
 		389C13B11EC0B2BF00E5C318 /* Canvas+UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Canvas+UILabel.swift"; sourceTree = "<group>"; };
-		389C13B21EC0B2BF00E5C318 /* Canvas+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Canvas+UITableView.swift"; sourceTree = "<group>"; };
 		389C13B31EC0B2BF00E5C318 /* CanvasHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasHelpers.swift; sourceTree = "<group>"; };
 		389C13B41EC0B2BF00E5C318 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
-		389C13C31EC0B2D100E5C318 /* Kandinsky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kandinsky.swift; sourceTree = "<group>"; };
 		389C13C61EC0B2DA00E5C318 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		389C13C71EC0B2DA00E5C318 /* Controller+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Controller+UIViewController.swift"; sourceTree = "<group>"; };
-		389C13C81EC0B2DA00E5C318 /* AnyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyController.swift; sourceTree = "<group>"; };
 		389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCanvas.swift; sourceTree = "<group>"; };
 		38F9810D1EC0C2C800A33D8D /* CanvasRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasRenderer.swift; sourceTree = "<group>"; };
 		4BCAE34902CEB736125E1F54 /* Pods-Kandinsky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kandinsky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kandinsky/Pods-Kandinsky.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F828881C494B2C00330CF4 /* Kandinsky.framework in Frameworks */,
-				FFA9DFFAF99866B1CE014DE2 /* Pods_KandinskyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				389C13B11EC0B2BF00E5C318 /* Canvas+UILabel.swift */,
-				389C13B21EC0B2BF00E5C318 /* Canvas+UITableView.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -165,7 +144,6 @@
 		389C13AB1EC0B2A600E5C318 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				389C13C31EC0B2D100E5C318 /* Kandinsky.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -190,7 +168,6 @@
 			children = (
 				389C13C61EC0B2DA00E5C318 /* Controller.swift */,
 				389C13C71EC0B2DA00E5C318 /* Controller+UIViewController.swift */,
-				389C13C81EC0B2DA00E5C318 /* AnyController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -263,7 +240,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				28F8288A1C494B2C00330CF4 /* PBXTargetDependency */,
+				3826E4F61EC36D6B006C7D78 /* PBXTargetDependency */,
 			);
 			name = KandinskyTests;
 			productName = KandinskyTests;
@@ -285,6 +262,7 @@
 					};
 					28F828861C494B2C00330CF4 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = R8YP8KQ8U8;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -409,18 +387,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				389C13BF1EC0B2BF00E5C318 /* CanvasHelpers.swift in Sources */,
-				389C13BD1EC0B2BF00E5C318 /* Canvas+UITableView.swift in Sources */,
 				389C13C11EC0B2BF00E5C318 /* Canvas.swift in Sources */,
 				389C13B91EC0B2BF00E5C318 /* SlashOperator.swift in Sources */,
 				389C13C91EC0B2DA00E5C318 /* Controller.swift in Sources */,
 				38F9810E1EC0C2C800A33D8D /* CanvasRenderer.swift in Sources */,
-				389C13CD1EC0B2DA00E5C318 /* AnyController.swift in Sources */,
 				389C13D01EC0B2F800E5C318 /* AnyCanvas.swift in Sources */,
 				389C13B71EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */,
 				389C13B51EC0B2BF00E5C318 /* KandinskyOP.swift in Sources */,
 				389C13CB1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */,
 				3897B6CF1EC3088700285126 /* CanvasUIKitUtility.swift in Sources */,
-				389C13C41EC0B2D100E5C318 /* Kandinsky.swift in Sources */,
 				389C13BB1EC0B2BF00E5C318 /* Canvas+UILabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,29 +404,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389C13C01EC0B2BF00E5C318 /* CanvasHelpers.swift in Sources */,
-				389C13D11EC0B2F800E5C318 /* AnyCanvas.swift in Sources */,
-				287D0A6E1C4B73BD004566D6 /* KandinskyTests.swift in Sources */,
-				389C13BE1EC0B2BF00E5C318 /* Canvas+UITableView.swift in Sources */,
-				389C13C21EC0B2BF00E5C318 /* Canvas.swift in Sources */,
-				389C13BA1EC0B2BF00E5C318 /* SlashOperator.swift in Sources */,
-				389C13CA1EC0B2DA00E5C318 /* Controller.swift in Sources */,
-				389C13CE1EC0B2DA00E5C318 /* AnyController.swift in Sources */,
-				389C13B81EC0B2BF00E5C318 /* CanvasRepresentable.swift in Sources */,
-				389C13B61EC0B2BF00E5C318 /* KandinskyOP.swift in Sources */,
-				389C13CC1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */,
-				389C13C51EC0B2D100E5C318 /* Kandinsky.swift in Sources */,
-				389C13BC1EC0B2BF00E5C318 /* Canvas+UILabel.swift in Sources */,
+				3826E4F71EC36DDD006C7D78 /* KandinskyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		28F8288A1C494B2C00330CF4 /* PBXTargetDependency */ = {
+		3826E4F61EC36D6B006C7D78 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 28F8287C1C494B2C00330CF4 /* Kandinsky */;
-			targetProxy = 28F828891C494B2C00330CF4 /* PBXContainerItemProxy */;
+			targetProxy = 3826E4F51EC36D6B006C7D78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -593,6 +556,7 @@
 			baseConfigurationReference = A4E513CC8C680F9168CC5C1C /* Pods-KandinskyTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R8YP8KQ8U8;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mislavjavor.kandinsky.KandinskyTests;
@@ -607,6 +571,7 @@
 			baseConfigurationReference = EE62901674128EB7EA63FC40 /* Pods-KandinskyTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R8YP8KQ8U8;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mislavjavor.kandinsky.KandinskyTests;

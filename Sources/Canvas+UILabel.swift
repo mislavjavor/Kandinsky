@@ -13,7 +13,7 @@ public extension Canvas where UIKitRepresentation: UILabel {
     
     public var fontFamily: String {
         get {
-            return view.font.familyName
+            return view.font.fontName
         }
         set {
             let currentFontSize = view.font.pointSize
@@ -26,7 +26,7 @@ public extension Canvas where UIKitRepresentation: UILabel {
             return view.font.pointSize
         }
         set {
-            let currentFontFamily = view.font.familyName
+            let currentFontFamily = view.font.fontName
             view.font = UIFont(name: currentFontFamily, size: newValue)
         }
     }

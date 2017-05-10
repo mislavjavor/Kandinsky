@@ -146,6 +146,52 @@ This produces a view that looks like this:
 
 ![Simple example](/Assets/simple_example.png)
 
+### Implementing the layout
+
+In order to use your layout, simply make your `UIViewController` implement the
+`Controller` protocol. This means adding the `didRender(ViewHolder:root:)` method
+to your `UIViewController`.
+
+Then in the `loadView` method of your `UIViewController`,
+call the `setContentView` function and pass the instance of your layout
+
+The `didRender` method will be called after all of the views have been added
+and constraints set.
+
+You can use it to extract views from the `ViewHolder` by using the
+
+```swift
+let myView = views["<view_id>"] as? UIButton // cast to your specific view
+```
+
+```swift
+class DemoVC: UIViewController, Controller {
+
+    var views: ViewHolder = [:]
+
+    override func loadView() {
+        super.loadView()
+        setContentView(with: layout)
+    }
+
+    func didRender(views: ViewHolder, root: AnyCanvas) {
+        self.views = views
+        let button = views["pressMeButton"] as? UIButton
+        button?.addTarget(self, action: #selector(didTouchButton), for: .touchUpInside)
+    }
+
+    func didTouchButton() {
+        let title = views["titleLabel"] as? UILabel
+        title?.text = "Pressed the button"
+        PlaygroundHelper.alert(over: self, message: "Pressed the button")
+    }
+}
+```
+
+Note - `setContentView` only sets the `view` property of the `UIViewController` and
+calls the `didRender` method. You can call it at any time, but it's recommended to
+call it in the `loadView` method
+
 ## Getting involved
 
 * If you **want to contribute** please feel free to **submit pull requests**.
