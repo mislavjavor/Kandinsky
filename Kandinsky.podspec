@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Kandinsky"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Swift powered, modular, UIKit compatible storyboard replacement DSL"
   s.homepage         = "https://github.com/mislavjavor/Kandinsky"
   s.license          = { type: 'MIT', file: 'LICENSE' }
