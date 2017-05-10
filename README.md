@@ -252,6 +252,76 @@ canvas, you can do it like this:
 let view = CanvasRenderer.render(demoLayout)
 ```
 
+### Extending the framework
+
+This framework is build by following the latest and greatest in the protocol
+oriented world of Swift. If you wish to add additional functionality, you only
+need to extend the `Canvas` protocol
+
+```swift
+extension Canvas {
+
+    func alignParentLeadingAndTrailing(offset: Int) {
+        // If you're working with constraints - you must append your code
+        // to the `deferAfterRender` array. Otherwise your app will fail
+        deferToAfterRender.append({ views in
+            self.view.snp.makeConstraints { make in
+                make.leading.equalToSuperview().offset(offset)
+                make.trailing.equalToSuperview().offset(-offset)
+            }
+        })
+    }
+}
+```
+
+And after you've done that you can call it:
+
+```swift
+...
+UIButton.set {
+    ...
+    $0.alignParentLeadingAndTrailing(offset: 20)
+    ...
+}
+...
+```
+
+You can also be more specific:
+
+```swift
+extension Canvas where UIKitRepresentation == UITableView {
+
+    func setDelegateAndDataSource<T>(item: T)
+        where T: UITableViewDelegate, T: UITableViewDataSource {
+
+            self.view.delegate = item
+            self.view.dataSource = item
+    }
+
+}
+
+
+extension Canvas where UIKitRepresentation: UILabel {
+
+    func setTextToLoremIpsum() {
+        self.view.text = "Lorem ipsum dolor sit..." // ...
+    }
+
+}
+```
+
+And then those properties will only appear on those types of `Canvas`es
+
+```swift
+UITableView.set {
+    $0.setDelegateAndDataSource(item: delegate)
+}
+
+UILabel.set {
+    $0.setTextToLoremIpsum()
+}
+```
+
 ## Getting involved
 
 * If you **want to contribute** please feel free to **submit pull requests**.
