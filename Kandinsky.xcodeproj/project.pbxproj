@@ -22,6 +22,7 @@
 		389C13CB1EC0B2DA00E5C318 /* Controller+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13C71EC0B2DA00E5C318 /* Controller+UIViewController.swift */; };
 		389C13D01EC0B2F800E5C318 /* AnyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C13CF1EC0B2F800E5C318 /* AnyCanvas.swift */; };
 		38F9810E1EC0C2C800A33D8D /* CanvasRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9810D1EC0C2C800A33D8D /* CanvasRenderer.swift */; };
+		62E8D7D708FB67B6A90E4E17 /* Pods_KandinskyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAE6241E833C54ECDB2309 /* Pods_KandinskyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F828881C494B2C00330CF4 /* Kandinsky.framework in Frameworks */,
+				62E8D7D708FB67B6A90E4E17 /* Pods_KandinskyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
