@@ -69,37 +69,13 @@ UIView.set {
 
 
 
-
-let layout =
-UIView.set {
-    $0.view.backgroundColor = .white }.add { r in
-        
-        UILabel.set {
-            $0.id = "titleLabel"
-            $0.view.text = "Hello world"
-            $0.fontSize = 30 // fontSize is a helper function
-            $0.centerInParent()
-        }/r
-        
-        UIButton.set {
-            $0.view.setTitle("Push me!", for: .normal)
-            $0.view.setTitleColor(.blue, for: .normal)
-            $0.under("titleLabel")
-            $0.centerHorizontallyInParent()
-        }/r
-        
-}
-
-
-
-
 class DemoVC: UIViewController, Controller {
     
     var views: ViewHolder = [:]
     
     override func loadView() {
         super.loadView()
-        setContentView(with: layout)
+        setContentView(with: demoCanvas)
     }
     
     func didRender(views: ViewHolder, root: AnyCanvas) {
