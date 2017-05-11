@@ -11,8 +11,6 @@
 
 Author: [Mislav Javor](http://mislavjavor.com).
 
-Built at [Ingemark](http://www.ingemark.com) agency, Zagreb
-
 ## Looking for contributors
 
 This project is currently a one man operation. I've dedicated a large chuck of
